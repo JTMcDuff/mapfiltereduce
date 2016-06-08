@@ -25,6 +25,23 @@ newarr.push(func(arr[i]));
 }
 return newarr;
 }
+
+function mult(mult, num){
+return mult*num;
+}
+
+function add(total,num){
+return total+num;
+}
+
+function reduce(arr,func){
+var total=0;
+for (i=0;i<arr.length;i++){
+total=func(total,arr[i]);
+}
+return total;
+}
+
 </script>
 
 </body>
